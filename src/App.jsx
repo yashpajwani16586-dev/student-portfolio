@@ -7,62 +7,143 @@ function App() {
         minHeight: "100vh",
         padding: "60px",
         fontFamily: "Arial",
+        maxWidth: "1200px",
+        margin: "auto",
       }}
     >
-      <h1 style={{ fontSize: "60px", marginBottom: "10px" }}>
-        Your Name
+      {/* Hero Section */}
+      <h1
+        style={{
+          fontSize: "60px",
+          marginBottom: "10px",
+          textAlign: "center",
+        }}
+      >
+        Yash Pajwani
       </h1>
 
-      <h2 style={{ color: "#38bdf8" }}>
-        Computer Science Student
+      <h2
+        style={{
+          color: "#38bdf8",
+          textAlign: "center",
+        }}
+      >
+        Computer Engineering Student
       </h2>
 
-      <p style={{ maxWidth: "700px" }}>
-        Passionate about Web Development, Data Analytics,
-        Python and Software Engineering.
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: "20px",
+          maxWidth: "800px",
+          margin: "20px auto",
+        }}
+      >
+        Passionate about Web Development, Data Analytics, Python,
+        Database Management and Software Development.
       </p>
 
       <hr />
 
-      <h2>About Me</h2>
-      <p>
-        I am a student who enjoys building websites and solving
-        real-world problems through technology.
-      </p>
+      {/* About */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>About Me</h2>
 
-      <h2>Skills</h2>
-      <p>
-        Python • JavaScript • React • MySQL • HTML • CSS
-      </p>
+        <p
+          style={{
+            textAlign: "center",
+            maxWidth: "900px",
+            margin: "auto",
+          }}
+        >
+          I am a Computer Engineering student at Shah & Anchor Kutchhi
+          Engineering College (SAKEC). I enjoy building websites,
+          solving programming problems and learning new technologies.
+        </p>
+      </section>
 
-      <h2>Projects</h2>
+      {/* Skills */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>Skills</h2>
 
-      <div
-        style={{
-          border: "1px solid #334155",
-          padding: "20px",
-          borderRadius: "12px",
-          marginBottom: "15px",
-        }}
-      >
-        <h3>Student Portfolio Website</h3>
-        <p>Personal portfolio built using React.</p>
-      </div>
+        <p style={{ textAlign: "center" }}>
+          Python • JavaScript • React • MySQL • HTML • CSS • Power BI
+        </p>
+      </section>
 
-      <div
-        style={{
-          border: "1px solid #334155",
-          padding: "20px",
-          borderRadius: "12px",
-        }}
-      >
-        <h3>Library Management System</h3>
-        <p>Database management project using MySQL.</p>
-      </div>
+      {/* Education */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>Education</h2>
 
-      <h2 style={{ marginTop: "40px" }}>Contact</h2>
-      <p>Email: yourmail@gmail.com</p>
-      <p>LinkedIn: linkedin.com/in/yourname</p>
+        <div
+          style={{
+            border: "1px solid #334155",
+            padding: "20px",
+            borderRadius: "12px",
+          }}
+        >
+          <h3>Shah & Anchor Kutchhi Engineering College</h3>
+          <p>Computer Engineering</p>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>Projects</h2>
+
+        <div
+          style={{
+            border: "1px solid #334155",
+            padding: "20px",
+            borderRadius: "12px",
+            marginBottom: "20px",
+          }}
+        >
+          <h3>Student Portfolio Website</h3>
+          <p>
+            Personal portfolio website developed using React and
+            deployed on Vercel.
+          </p>
+        </div>
+
+        <div
+          style={{
+            border: "1px solid #334155",
+            padding: "20px",
+            borderRadius: "12px",
+          }}
+        >
+          <h3>Library Management System</h3>
+          <p>
+            Database management project using MySQL for managing
+            books, students and issue records.
+          </p>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>Certifications</h2>
+
+        <ul>
+          <li>Python Programming Certification</li>
+          <li>Data Analytics Workshop</li>
+          <li>Web Development Training</li>
+        </ul>
+      </section>
+
+      {/* Contact */}
+      <section style={{ marginTop: "40px" }}>
+        <h2 style={{ textAlign: "center" }}>Contact</h2>
+
+        <p style={{ textAlign: "center" }}>
+          Email: yash.pajwani16586@sakec.ac.in
+        </p>
+
+        <p style={{ textAlign: "center" }}>
+          Mumbai, Maharashtra, India
+        </p>
+      </section>
     </div>
   );
 }

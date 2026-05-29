@@ -1,151 +1,163 @@
-function App() {
-  return (
-    <div
-      style={{
-        background: "#0f172a",
-        color: "white",
-        minHeight: "100vh",
-        padding: "60px",
-        fontFamily: "Arial",
-        maxWidth: "1200px",
-        margin: "auto",
-      }}
-    >
-      {/* Hero Section */}
-      <h1
-        style={{
-          fontSize: "60px",
-          marginBottom: "10px",
-          textAlign: "center",
-        }}
-      >
-        Yash Pajwani
-      </h1>
-
-      <h2
-        style={{
-          color: "#38bdf8",
-          textAlign: "center",
-        }}
-      >
-        Computer Engineering Student
-      </h2>
-
-      <p
-        style={{
-          textAlign: "center",
-          fontSize: "20px",
-          maxWidth: "800px",
-          margin: "20px auto",
-        }}
-      >
-        Passionate about Web Development, Data Analytics, Python,
-        Database Management and Software Development.
-      </p>
-
-      <hr />
-
-      {/* About */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>About Me</h2>
-
-        <p
-          style={{
-            textAlign: "center",
-            maxWidth: "900px",
-            margin: "auto",
-          }}
-        >
-          I am a Computer Engineering student at Shah & Anchor Kutchhi
-          Engineering College (SAKEC). I enjoy building websites,
-          solving programming problems and learning new technologies.
-        </p>
-      </section>
-
-      {/* Skills */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Skills</h2>
-
-        <p style={{ textAlign: "center" }}>
-          Python • JavaScript • React • MySQL • HTML • CSS • Power BI
-        </p>
-      </section>
-
-      {/* Education */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Education</h2>
-
-        <div
-          style={{
-            border: "1px solid #334155",
-            padding: "20px",
-            borderRadius: "12px",
-          }}
-        >
-          <h3>Shah & Anchor Kutchhi Engineering College</h3>
-          <p>Computer Engineering</p>
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Projects</h2>
-
-        <div
-          style={{
-            border: "1px solid #334155",
-            padding: "20px",
-            borderRadius: "12px",
-            marginBottom: "20px",
-          }}
-        >
-          <h3>Student Portfolio Website</h3>
-          <p>
-            Personal portfolio website developed using React and
-            deployed on Vercel.
-          </p>
-        </div>
-
-        <div
-          style={{
-            border: "1px solid #334155",
-            padding: "20px",
-            borderRadius: "12px",
-          }}
-        >
-          <h3>Library Management System</h3>
-          <p>
-            Database management project using MySQL for managing
-            books, students and issue records.
-          </p>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Certifications</h2>
-
-        <ul>
-          <li>Python Programming Certification</li>
-          <li>Data Analytics Workshop</li>
-          <li>Web Development Training</li>
-        </ul>
-      </section>
-
-      {/* Contact */}
-      <section style={{ marginTop: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Contact</h2>
-
-        <p style={{ textAlign: "center" }}>
-          Email: yash.pajwani16586@sakec.ac.in
-        </p>
-
-        <p style={{ textAlign: "center" }}>
-          Mumbai, Maharashtra, India
-        </p>
-      </section>
-    </div>
-  );
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-export default App;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  z-index: 1000;
+}
+
+.logo {
+  color: #2563eb;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg,#0f172a,#1e3a8a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 72px;
+}
+
+.hero span {
+  color: #60a5fa;
+}
+
+.hero h2 {
+  color: #cbd5e1;
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 800px;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+
+.card,
+.project-card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+  font-weight: bold;
+}
+
+.project-card {
+  margin-bottom: 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  background: white;
+  color: #111827;
+  text-decoration: none;
+  padding: 18px 35px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+}
